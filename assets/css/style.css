@@ -109,10 +109,10 @@ footer.page-footer {
 
 #product-head {
     color: black;
-    -webkit-text-fill-color: #84754E;
+    -webkit-text-fill-color: black;
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: white;
     font-family: GothicBold;
 }
 
