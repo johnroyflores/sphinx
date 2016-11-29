@@ -67,30 +67,7 @@ p {
     width: 100%;
 }
 
-@media only screen and (max-width: 992px) {
-    .parallax-container .section {
-        position: absolute;
-        top: 40%;
-    }
-    #index-banner .section {
-        top: 10%;
-    }
-     #toplogo{
-            position: absolute;
-    left: -8.9em;
-    top: -40em;
-    -webkit-transform: scale(.1, .1);
-    z-index: 2;
-    }
-}
 
-@media only screen and (max-width: 600px) {
-    #index-banner .section {
-        top: 0;
-    }
-
-   
-}
 
 .icon-block {
     padding: 0 15px;
@@ -321,4 +298,30 @@ footer.page-footer {
 
 #mobile-demo{
     color: #84754E !important;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+   
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+
+      .toplogo{
+            position: absolute;
+    left: -8.9em;
+    top: -6.8em;
+    -webkit-transform: scale(.1, .1);
+    z-index: 2;
+    }
+   
 }
