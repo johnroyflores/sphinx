@@ -97,8 +97,8 @@ footer.page-footer {
     color: black;
     -webkit-text-fill-color: black;
     /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
+   /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;*/
     font-family: GothicBold;
 }
 
@@ -324,4 +324,8 @@ footer.page-footer {
     z-index: 2;
     }
    
+}
+
+#pennies{
+    letter-spacing: 150%;
 }
