@@ -35,14 +35,16 @@
     <div id="top">
     </div>
     <nav class="" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="#top" class="brand-logo"><img class="toplogo" src="assets/images/toplogo.png">PYRAMID</a>
+        <div class="nav-wrapper">
+            <img class="toplogo right" src="assets/images/toplogo.png">
+            <a id="logo-container" href="#top" class="brand-logo">PYRAMID</a>
            
             <ul class="right hide-on-med-and-down">
                 <li><a href="#aboutus">ABOUT US</a></li>
                 <li><a href="#productss">PRODUCTS</a></li>
                 <li><a href="#contactus">CONTACT US</a></li>
             </ul>
+            </div>
     </nav>
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
@@ -77,7 +79,7 @@
                     <div class="icon-block">
                         <h2 class="center"><i class="fa fa-flask" aria-hidden="true"></i></h2>
                         <h5 class="center">Clean.</h5>
-                        <p class="light" style="text-align: center;">Every batch of our is oil is filtered to remove chloraphil, plant matter and other undesirables...<b>four times</b>. We're customers too, and we only want to consume the highest quality concentrates. We're willing to sacrifice yield to accomplish that.
+                        <p class="light" style="text-align: center;">Every batch of our oil is filtered to remove chloraphil, plant matter and other undesirables...<b>four times</b>. We're customers too, and we only want to consume the highest quality concentrates. We're willing to sacrifice yield to accomplish that.
                             <br>Our quad-filtering is what sets us apart. </p>
                     </div>
                 </div>
@@ -204,6 +206,10 @@
                         <li><a class="" href="https://twitter.com/pyramidpensusa">Twitter</a></li>
                         <li><a class="" href="https://www.instagram.com/pyramidpensusa/">Instagram</a></li>
                     </ul>
+
+                    <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script>
+                    <iframe src="//lightwidget.com/widgets/8339ff862c475365a076a841f3c6f26f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; height: 100%"></iframe>
+
                 </div>
             </div>
         </div>
@@ -219,27 +225,7 @@
         </div>
         <div class="parallax" ><img src="assets/images/galaxy.jpg" alt="Unsplashed background img 2"></div>
     </div>
-    <!-- <div class="container" id = "contactus">
-        <div class="section">
-            <div class="row">
-                <div class="col s12 center">
-                    <h3><i class="mdi-content-send brown-text"></i></h3>
-                    <h4>Contact Us</h4>
-                    <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-                </div>
-            </div>
-        </div>
-        <div class="parallax"><img src="assets/images/background3.jpg" alt="Unsplashed background img 3"></div>
-    </div> -->
+
     <footer class="page-footer colorbg">
         <div class="container">
             <div class="row">
@@ -254,6 +240,8 @@
 
                 <div class="col l3 s12">
                     <h5 class="">Connect</h5>
+                    <div id = "insta">
+                    </div>
                       <ul>
                         <li><a class="" href="https://www.facebook.com/pyramidpensusa/">Facebook</a></li>
                         <li><a class="" href="https://twitter.com/pyramidpensusa">Twitter</a></li>
@@ -284,12 +272,11 @@
     //         $.cookie("pop", "2");
     //     }
     // });
-
-    // $(document).ready(function(){
-    //   $('#ageModal').openModal();
-    //   $('html,body').localScroll({duration:800});
+    $(document).ready(function(){
+      // $('#ageModal').openModal();
+      $('html,body').localScroll({duration:800});
       
-    // });
+    });
     </script>
 </body>
 

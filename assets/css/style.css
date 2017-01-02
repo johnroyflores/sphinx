@@ -124,6 +124,9 @@ footer.page-footer {
 
 #logo-container {
     letter-spacing: 8px;
+    position: fixed;
+    left:6vw;
+
 }
 
 .rainbow {
@@ -191,11 +194,16 @@ footer.page-footer {
 }
 
 .toplogo {
-    position: absolute;
-    left: -8.9em;
-    top: -6.3em;
-    -webkit-transform: scale(.1, .1);
-    z-index: 2;
+  /*  position: absolute;
+    left: -3.9em;
+    top: -6.3em;*/
+   /* -webkit-transform: scale(.1, .1);*/
+   width:45px;
+   height:45px;
+   margin: 0 1em 0 1em;
+   position:fixed;
+   top:1vh;
+   z-index: 2;
 }
 
 #leaf {
@@ -316,14 +324,17 @@ footer.page-footer {
         top: 0;
     }
 
-      .toplogo{
+      /*.toplogo{
             position: absolute;
     left: -8.9em;
     top: -6.8em;
     -webkit-transform: scale(.1, .1);
     z-index: 2;
-    }
+    }*/
    
+   #logo-container{
+    display: none;
+   }
 }
 
 #pennies{
