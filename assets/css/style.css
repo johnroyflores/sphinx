@@ -20,8 +20,12 @@
 
 html,
 body {
-    max-width: 100%;
-    overflow-x: hidden;
+    height: 100%;
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: auto !important;
 }
 
 nav ul a,

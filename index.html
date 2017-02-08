@@ -14,7 +14,7 @@
     <script src="https://use.fontawesome.com/af4090585e.js"></script>
 </head>
 
-<body>
+<body onload="scrollDelay()">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Modal -->
@@ -38,20 +38,19 @@
         <div class="nav-wrapper">
             <img class="toplogo right" src="assets/images/toplogo.png">
             <a id="logo-container" href="#top" class="brand-logo">PYRAMID</a>
-           
             <ul class="right hide-on-med-and-down">
                 <li><a href="#aboutus">ABOUT US</a></li>
                 <li><a href="#productss">PRODUCTS</a></li>
                 <li><a href="#contactus">CONTACT US</a></li>
             </ul>
-            </div>
+        </div>
     </nav>
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
             <div class="container">
                 <br>
                 <br>
-                <h1 class="header center name" id = "pennies">PYRAMID PENS</h1>
+                <h1 class="header center name" id="pennies">PYRAMID PENS</h1>
                 <div class="row center">
                     <h5 class="header col s12 light">Take your cloud.</h5>
                 </div>
@@ -201,15 +200,14 @@
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h4>See what we're up to.</h4>
-                  <!--   <ul>
+                    <!--   <ul>
                         <li><a class="" href="https://www.facebook.com/pyramidpensusa/">Facebook</a></li>
                         <li><a class="" href="https://twitter.com/pyramidpensusa">Twitter</a></li>
                         <li><a class="" href="https://www.instagram.com/pyramidpensusa/">Instagram</a></li>
                     </ul> -->
-
-                    <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script>
+                    <!-- LightWidget WIDGET -->
+                    <script src="//lightwidget.com/widgets/lightwidget.js"></script>
                     <iframe src="//lightwidget.com/widgets/8339ff862c475365a076a841f3c6f26f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; height: 100%"></iframe>
-
                 </div>
             </div>
         </div>
@@ -263,19 +261,33 @@
     <script src="assets/js/app.js"></script>
     <script src="assets/js/jquery.cookie.js"></script>
     <script src="assets/js/jquery.localScroll.js" type="text/javascript"></script> 
-    <script src="assets/js/jquery.scrollTo.js" type="text/javascript"></script> 
-    <script>
+    <!--<script type= text/javascript>
     // $(document).ready(function() {
     //     if ($.cookie("pop") == null) {
     //         $("#ageModal").modal("show");
     //         $.cookie("pop", "2");
     //     }
-    // });
-    $(document).ready(function(){
-      // $('#ageModal').openModal();
-      $('html,body').localScroll({duration:800});
-      
-    });
+    // });-->
+    
+
+    <script>
+        
+        $('html,body').localScroll({duration:800});
+        
+            
+        var scroll = function(){
+             $("body").addClass("scroll");
+                }
+    if ( $(window).width() > 739) {      
+        $("#buttones").click(scroll());
+        $('#ageModal').openModal();
+    } 
+    else{
+        $("body").addClass("scroll");
+    }
+
+            
+        
     </script>
 </body>
 
