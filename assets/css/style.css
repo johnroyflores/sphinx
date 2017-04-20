@@ -18,14 +18,15 @@
     src: url(../BebasNeue.otf);
 }
 
-html,
-body {
-    height: 100%;
-    overflow: hidden;
+html {
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
-.scroll {
-    overflow: auto !important;
+body {
+    /*height: 100%;*/
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
 }
 
 nav ul a,
@@ -53,7 +54,6 @@ a {
 
 p {
     line-height: 2rem;
-    text-align: center;
 }
 
 .button-collapse {
@@ -70,8 +70,6 @@ p {
 .parallax-container .section {
     width: 100%;
 }
-
-
 
 .icon-block {
     padding: 0 15px;
@@ -101,7 +99,7 @@ footer.page-footer {
     color: black;
     -webkit-text-fill-color: black;
     /* Will override color (regardless of order) */
-   /* -webkit-text-stroke-width: 1px;
+    /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;*/
     font-family: GothicBold;
 }
@@ -129,8 +127,7 @@ footer.page-footer {
 #logo-container {
     letter-spacing: 8px;
     position: fixed;
-    left:6vw;
-
+    left: 6vw;
 }
 
 .rainbow {
@@ -167,7 +164,7 @@ footer.page-footer {
     height: 100vh;
     width: 100vw;
     margin: 0px;
-    position: absolute;
+    position: fixed;
     top: 0 !important;
 }
 
@@ -188,26 +185,22 @@ footer.page-footer {
     margin: 0px;
 }
 
-#disposable {
-    -webkit-transform: scale(.7, .7);
-}
-
 .subhead {
     font-weight: 4;
     font-size: 1.2em;
 }
 
 .toplogo {
-  /*  position: absolute;
+    /*  position: absolute;
     left: -3.9em;
     top: -6.3em;*/
-   /* -webkit-transform: scale(.1, .1);*/
-   width:45px;
-   height:45px;
-   margin: 0 1em 0 1em;
-   position:fixed;
-   top:1vh;
-   z-index: 2;
+    /* -webkit-transform: scale(.1, .1);*/
+    width: 45px;
+    height: 45px;
+    margin: 0 1em 0 1em;
+    position: fixed;
+    top: 1vh;
+    z-index: 2;
 }
 
 #leaf {
@@ -258,9 +251,7 @@ footer.page-footer {
     visibility: none;
 }
 
-#beakers {
-
-}
+#beakers {}
 
 .dispo {
     max-height: 40px !important;
@@ -275,68 +266,326 @@ footer.page-footer {
     text-align: center;
 }
 
-@media only screen and (max-width: 992px) {
-    .parallax-container .section {
-        position: absolute;
-        top: 40%;
-    }
-    #index-banner .section {
-        top: 10%;
-    }
-       #classic{
-        display:none;
+.pennies {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+}
 
-    }
+.typog {
+    position: relative;
+    margin: auto;
+}
 
-    #disposable{
-        display:none;
-    }
+.checkerpic {
+    max-width: 700px;
+    max-height: 700px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.disposable {
+    transform: scale(.1) !important;
+}
+
+.typog {
+    width: 70%;
+    font-weight: 300;
+    word-wrap: normal;
+}
+
+.checker,
+.checker5,
+.checker9 {
+    height: 45vw;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    float: left;
+    position: relative;
+    border: 0 !important;
+    padding: 5em;
+    -webkit-box-shadow: inset -5px 5px 5px 0px rgba(230, 230, 230, 1);
+    -moz-box-shadow: inset -5px 5px 5px 0px rgba(230, 230, 230, 1);
+    box-shadow: inset -5px 5px 5px 0px rgba(230, 230, 230, 1);
+    -webkit-box-shadow: inset -5px -5px 5px 0px rgba(230, 230, 230, 1);
+    -moz-box-shadow: inset -5px -5px 5px 0px rgba(230, 230, 230, 1);
+    box-shadow: inset -5px -5px 5px 0px rgba(230, 230, 230, 1);
+    /* font-family: Calibre,Helvetica Neue,Helvetica,sans-serif;*/
+}
+
+.checker2,
+.checker6,
+.checker0 {
+    height: 45vw;
+    width: 50%;
+    background-color: #b4a47a;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    float: left;
+    margin: 0 !important;
+    border: 0 !important;
+    font-size: 2em;
+    -webkit-box-shadow: -5px 5px 5px 0px rgba(230, 230, 230, 1);
+    -moz-box-shadow: -5px 5px 5px 0px rgba(230, 230, 230, 1);
+    box-shadow: -5px 5px 5px 0px rgba(230, 230, 230, 1);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(230, 230, 230, 1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(230, 230, 230, 1);
+    box-shadow: 5px 5px 5px 0px rgba(230, 230, 230, 1);
+    /* font-family: Calibre,Helvetica Neue,Helvetica,sans-serif;*/
+}
+
+.checker3,
+.checker7 {
+    height: 45vw;
+    width: 50%;
+    float: left;
+    background-color: #b4a47a;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    margin: 0 !important;
+    border: 0 !important;
+    font-size: 2em;
+    text-align: right;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(230, 230, 230, 1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(230, 230, 230, 1);
+    box-shadow: 5px 5px 5px 0px rgba(230, 230, 230, 1);
+    /*   font-style: BebasNeue;*/
+}
+
+.checker4,
+.checker8 {
+    height: 45vw;
+    width: 50%;
+    float: left;
+    background-color: white;
+    padding: 5em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    -webkit-box-shadow: -5px 5px 5px 0px rgba(230, 230, 230, 1);
+    -moz-box-shadow: -5px 5px 5px 0px rgba(230, 230, 230, 1);
+    box-shadow: -5px 5px 5px 0px rgba(230, 230, 230, 1);
+    -webkit-box-shadow: inset -5px -5px 5px 0px rgba(230, 230, 230, 1);
+    -moz-box-shadow: inset -5px -5px 5px 0px rgba(230, 230, 230, 1);
+    box-shadow: inset -5px -5px 5px 0px rgba(230, 230, 230, 1);
+    /* font-style: BebasNeue;
+*/
+}
+
+
+/*Used to make the order show up correctly on mobile*/
+
+.checker4,
+.checker8 {
+    float: right !important;
+}
+
+
+/*.checker5 {
+    height: 45vw;
+    width: 50%;
+    background-color: black;
+    display: inline-block;
+    float:left;
+    position: relative;
+}
+
+.checker6 {
+    height: 45vw;
+    width: 50%;
+    background-color: #84754E;
+    display: inline-block;
+}
+
+.checker7 {
+    height: 45vw;
+    width: 50%;
+    float: left;
+    background-color: #84754E;
+    display: inline-block;
+    position: relative;
+}
+
+.checker8 {
+    height: 45vw;
+    width: 50%;
+    background-color: black;
+    display: inline-block;
+}*/
+
+
+/*.checker9 {
+    height: 45vw;
+    width: 50%;
+    background-color: black;
+    display: inline-block;
+    float:left;
+    position: relative;
+}
+
+.checker0 {
+    height: 45vw;
+    width: 50%;
+    background-color: #84754E;
+    display: inline-block;
+}*/
+
+.product-header {
+    text-align: center;
+}
+
+.pyramid-text {
+    max-width: 50vw;
+}
+
+#logo-bar {
+    display: block;
+    max-width: 110vw;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.flex-row {
+    display: flex;
+    width: 100vw;
+    align-content: space-between;
+    justify-content: center;
+}
+
+
+
+.flexy{
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 600px) {
-    #index-banner .section {
+    * {}
+    /*    #index-banner .section {
         top: 0;
+    }*/
+    #classic {
+        display: none;
     }
-
-    #classic{
-        display:none;
-
+    #disposable {
+        display: none;
     }
-
-    #disposable{
-        display:none;
+    .checkers {
+        font-size: 2.9vw;
+    }
+    h1 {
+        font-size: 150%;
+    }
+    .checkers {
+        min-height: 70vw;
+        width: 100vw;
+        display: inline-block;
+        float: left;
+        text-align: center;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    .brand-logo {
+        display: none;
+        visibility: hidden;
+    }
+    h5 {
+        font-size: .9em;
     }
 }
 
-#mobile-demo{
+@media only screen and (max-width: 992px) {
+    /*  #index-banner .section {
+        top: 10%;
+    }*/
+    #classic {
+        display: none;
+    }
+    #disposable {
+        display: none;
+    }
+    .checkers {
+        max-height: 50vh;
+        min-height: 70vw;
+        width: 100vw;
+        display: inline-block;
+        float: left;
+        text-align: center;
+        margin: 0 !important;
+        padding: 0 !important;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    .checkerpic {
+        max-width: 100vw;
+        max-height: none;
+        display: block;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .photobox {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .brand-logo {
+        display: none;
+        visibility: hidden;
+    }
+    .pyramid-text {
+        max-width: 60vw;
+    }
+    .pennies {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .checkerpic {
+        margin: 0;
+    }
+}
+
+#mobile-demo {
     color: #84754E !important;
 }
 
-@media only screen and (max-width: 992px) {
-    .parallax-container .section {
-        position: absolute;
-        top: 40%;
-    }
-    #index-banner .section {
-        top: 10%;
-    }
-   
-}
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
     #index-banner .section {
         top: 0;
-
     }
-    .connect{
-text-align: center;
-}
+    .connect {
+        text-align: center;
+    }
+    .left {
+        text-align: left;
+    }*/
 
-.left{
-    text-align: left;
-}
 
-      /*.toplogo{
+/*.toplogo{
             position: absolute;
     left: -8.9em;
     top: -6.8em;
@@ -344,14 +593,15 @@ text-align: center;
     z-index: 2;
     }*/
 
-   
-   #logo-container{
-    display: none;
-   }
+
+/*
+    #logo-container {
+        display: none;
+    }
+    .typog {
+        font-size: 10px;
+        word-wrap: break-word;
+        padding: 3vw;
+    }
 }
-
-#pennies{
-    letter-spacing: 150%;
-}
-
-
+*/

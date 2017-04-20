@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <title>Pyramid Pens</title>
+    <title>Pyramid</title>
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -14,7 +14,7 @@
     <script src="https://use.fontawesome.com/af4090585e.js"></script>
 </head>
 
-<body onload="scrollDelay()">
+<body>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Modal -->
@@ -50,9 +50,10 @@
             <div class="container">
                 <br>
                 <br>
-                <h1 class="header center name" id="pennies">PYRAMID PENS</h1>
+              
                 <div class="row center">
-                    <h5 class="header col s12 light">Take your cloud.</h5>
+                  <img class="pyramid-text" src="assets/images/pyramid-text.svg">
+                    <h5 class="header col s12 light">Find your cloud.</h5>
                 </div>
                 <!--  <div class="row center">
           <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light">Get Started</a>
@@ -61,7 +62,7 @@
                 <br>
             </div>
         </div>
-        <div class="parallax"><img src="assets/images/lines.png" alt="Unsplashed background img 1"></div>
+        <div class="parallax"><img class="path" src="assets/images/lines.svg" alt="Unsplashed background img 1"></div>
     </div>
     <div class="container">
         <div class="section">
@@ -105,7 +106,7 @@
     </div>
     <div id="aboutus"></div>
     <div class="container">
-        <div class="section">
+        <div class="section transparent">
             <div class="row">
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -117,17 +118,69 @@
     </div>
     <!-- End About Us container -->
     <!-- Products Container -->
-    <div id="productss" class="parallax-container valign-wrapper">
+    <div id="productss" class="valign-wrapper">
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
-                    <h1 class="header center white-text" id="product-head">PRODUCTS</h1>
+                    <h1 class="header center white-text" id="product-head"></h1>
                 </div>
             </div>
         </div>
-        <div class="parallax overlay gold"><img id="bg4" src="assets/images/background4.jpg" alt="Unsplashed background img 4"></div>
+        <div class="overlay gold"><img id="logo-bar" src="assets/images/logo-bar.svg" alt="Unsplashed background img 4"></div>
     </div>
-    <div class="container">
+    <div class="checker checkers photobox">
+        <div class="checkerpic">
+            <img class="checkerpic" src="assets/images/prism.jpg">
+        </div>
+    </div>
+    <div class="checker2 checkers">
+        <div class="typog">
+            <h1 class="">Prism.</h1>
+            <p class="description">Pyramid Prism represents the distillation of cannabis at the highest level. As a connoisseur, you know that cannabis has nuances. Prism preserves these nuances and offers you all of the flavor of your favorite flower married with our highest tested THC levels.</p>
+        </div>
+    </div>
+    <div class="checker4 checkers photobox">
+        <div class="checkerpic">
+            <img class="checkerpic" src="assets/images/gold-cartridge.JPG">
+        </div>
+    </div>
+    <div class="checker3 checkers">
+        <div class="typog">
+            <h1>Gold.</h1>
+            <p>Pyramid Gold was our first foray into the market and is one of our higher THC offerings. As with all Pyramid products, Pyramid Gold is 100% strain specific. This handmade concentrate has been quadruple filtered to remove any chlorophyll and other impurities. It's worth its weight in gold.</p>
+        </div>
+    </div>
+    <div class="checker5 checkers photobox">
+        <div class="checkerpic">
+            <img class="checkerpic" src="assets/images/silver-cartridge.JPG">
+        </div>
+    </div>
+    <div class="checker6 checkers">
+        <div class="typog">
+            <h1>Silver.</h1>
+            <p>Our silver oil was produced with our casual smokers in mind. With potency levels slightly higher than some of the most potent flower, this coconut oil infused extract will take the edge off without putting you over the top.</p>
+        </div>
+    </div>
+     <div class="checker8 checkers photobox">
+        <div class="checkerpic">
+            <img class="checkerpic" src="assets/images/DisposableSitePic.png">
+        </div>
+    </div>
+    <div class="checker7 checkers">
+        <div class="typog">
+            <h1>Disposable.</h1>
+            <p>Here in CO, we love visitors. And due to our unique and forward thinking laws, visitors love us. The Pyramid Disposable is made for our friends not fortunate enough to live with us year round. Our first fully disposable offering allows you to leave your pen behind when you return home. We'll be here when you get back.</p>
+        </div>
+    </div>
+    <!--     <div class="checker9">
+            <div class="checkerpic">
+            <img src="http://placehold.it/500x500">
+        </div>
+    </div>
+    <div class="checker0">
+
+    </div> -->
+    <!--<div class="container">
         <div class="section">
             <div class="row">
                 <div class="col s12 center">
@@ -139,9 +192,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Products Container -->
-    <div class="parallax-container valign-wrapper">
+    <!-- <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
@@ -193,7 +246,7 @@
             </div>
         </div>
         <div class="parallax"><img src="assets/images/background3.jpg" alt="Unsplashed background img 2"></div>
-    </div>
+    </div> -->
     <div class="container">
         <div class="section">
             <div class="row">
@@ -225,9 +278,9 @@
     </div>
 
     <footer class="page-footer colorbg">
-        <div class="container">
-            <div class="row">
-                <div class="col l3 s6">
+        <div class="flex-row">
+            <div class="flex-row">
+                <div class="col flexy">
                     <h5 class="">Contact Us</h5>
                     <ul class = "left">
                     <li class=" text-lighten-4"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>  (720) 535-7436</li>
@@ -236,7 +289,7 @@
                     </ul>
                 </div>
 
-                <div class="col l3 s6 center">
+                <div class="col flexy">
                     <h5 class="">Connect</h5>
                    
                       <ul>
@@ -250,41 +303,29 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="brown-text text-lighten-3" href="#">Rizla</a>
+                Copyright 2017.
             </div>
         </div>
     </footer>
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="assets/js/materialize.js"></script>
     <script src="assets/js/init.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/jquery.cookie.js"></script>
     <script src="assets/js/jquery.localScroll.js" type="text/javascript"></script> 
-    <!--<script type= text/javascript>
-    // $(document).ready(function() {
-    //     if ($.cookie("pop") == null) {
-    //         $("#ageModal").modal("show");
-    //         $.cookie("pop", "2");
-    //     }
-    // });-->
+    <script src="assets/js/jquery.scrollTo.js" type="text/javascript"></script> 
+
     
 
     <script>
         
         $('html,body').localScroll({duration:800});
-        
-            
-        var scroll = function(){
-             $("body").addClass("scroll");
-                }
-    if ( $(window).width() > 739) {      
+    if ( $(window).width() > 1200) {      
         $("#buttones").click(scroll());
         $('#ageModal').openModal();
     } 
-    else{
-        $("body").addClass("scroll");
-    }
+
 
             
         
